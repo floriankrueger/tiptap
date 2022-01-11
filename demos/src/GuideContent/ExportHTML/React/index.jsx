@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { useEditor, EditorContent } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
+import Link from '@tiptap/extension-link'
 import './styles.scss'
 
 export default () => {
@@ -11,7 +12,7 @@ export default () => {
           Wow, this editor instance exports its content as HTML.
         </p>
       `,
-    extensions: [StarterKit],
+    extensions: [StarterKit, Link],
   })
 
   useEffect(() => {
